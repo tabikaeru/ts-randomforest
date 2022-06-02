@@ -1,0 +1,15 @@
+[package]
+name = "ts-randomforest"
+version = "0.0.1"
+edition = "2021"
+authors=["tabikaeru <moriokayuixxx@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+randomforest = "0.1"
+wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
+console_error_panic_hook= "*"
+[dev-dependencies]
+wasm-bindgen-test = "0.3.13"
