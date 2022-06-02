@@ -24,6 +24,9 @@ jobs:
         with:
           node-version: 14.x
           registry-url: 'https://registry.npmjs.org'
+      # build node modules from rust code
+      - name: build by rust code
+        run: wasm-pack build
 
       # Get current package version
       - name: current-package-version
